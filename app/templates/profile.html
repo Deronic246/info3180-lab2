@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<div class="box1">
+    <img src="{{url_for('static', filename='p.jpg')}}" />
+    <h1 id="fname" >Deron Nicholson</h1>
+    <h5 id="uname">@deronnic</h5>
+    <h5 id="loc">Kingston, Jamaica</h5>
+    <h5 id="date_joined">{{ date_joined }}</h5>
+    
+</div>
+
+<div class="box2">
+    <p>I am a promise. I am a possibility. I am a promise, with<br>
+    the Capital P. I am a great, big bundle of potentiality. Oh Yes. </p>
+
+    <div>
+        <table>
+            <tr>
+                <th>0</th>
+                <th>250</th>
+                <th>250</th>
+                
+            </tr>
+            <tr>
+                <td>Posts</th>
+                <td>Following</th> 
+                <td>Followers</th>
+            </tr>
+        </table>
+        </br>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
